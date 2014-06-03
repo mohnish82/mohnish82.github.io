@@ -14,9 +14,9 @@ As both Google Voice and Localphone, support E.164 number format i.e. internatio
 
 But with Callcentric added to the mix, I faced issues because it does not support ENUM format. Dialing 91xxxx, is not sufficient to call India! I must dial 01191xxxxx. Didn’t took long to figure that Gigaset offers very limited dial plan configuration options. But eventually, found a way to make it all work with the following settings:
 
-* 'Management > Local Settings': Choose country as USA and both international and local 'Code Number' as 1. Select 'Yes' for the option 'Predial long distance access code for VoIP calls'.
-* 'Telephony > Dialling Plans': Declare 2 dial plans i.e. 91 — Callcentric  &  1 — Google Voice. Do not select 'Use Area Code' option for both. Then under 'Code for VOIP line', enter 011 and choose 'Always'.
-* Choose 'Google Voice' to be the default call out line.
+* `Management > Local Settings`: Choose country as USA and both international and local `Code Number` as 1. Select `Yes` for the option `Predial long distance access code for VoIP calls`.
+* `Telephony > Dialling Plans`: Declare 2 dial plans i.e. 91 — Callcentric  &  1 — Google Voice. Do not select `Use Area Code` option for both. Then under `Code for VOIP line`, enter 011 and choose `Always`.
+* Choose `Google Voice` to be the default call out line.
 
 What this accomplishes is that any dialed number starting with 91 or 1, gets 011 appended to it. 91xx to 01191xx helps to satisfy the Callcentric requirement, so India calling works fine. 1xx to 0111xx works fine as Google Voice accepts 011 + country code + number format. So, 0111<US 10 digit number>, works with Google Voice. You may be wondering that if area code is not to be selected then why did we use that option in 1. That option allows us to dial 10 digit US numbers i.e. without the 1 prefix and still make calls through Google Voice. The way it works is that seeing 10 digit number (not starting with 1), the area code triggers-in. So, it makes US 10 digit number 11 digit number by prefixing 1. Then the dial plan appends 011 to it, making it 0111<US 10 digit number>, which works with Google Voice!
 
