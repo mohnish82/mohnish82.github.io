@@ -10,6 +10,8 @@ share: true
 
 I use Gigaset C610-IP VOIP phone for my calling needs. I’ve hooked it up to Google Voice (using [Simonics](https://simonics.com/gvgw/) gateway) for free US calling. For my international (India) calling needs, I was using [Localphone](http://www.localphone.com/) exclusively until recently. But as Localphone’s call quality decreased to sub par levels, I started looking around for alternatives. I could use Google Voice that cost just 2c/min but with Google declaring that they’ll shut down integration with 3rd parties, I looked around and settled on [Callcentric](http://www.callcentric.com/). Callcentric costs 2.4c/min to India and the voice quality is excellent.
 
+<img style="float:right" src="gigaset-c610ip.jpg" />
+
 As both Google Voice and Localphone, support E.164 number format i.e. international code +  area code + number, I never had the need to worry about dial plans and other stuff. I stored India numbers as 91xxxxxxxx and US numbers as either 1xxxxx or 10 digits directly without the 1. In dialing plans, I choose the setting – If number starts with 91 use Localphone, otherwise use Google Voice. This worked pretty well as Google Voice accepts 1xxxxx and 10 digit numbers for USA.
 
 But with Callcentric added to the mix, I faced issues because it does not support ENUM format. Dialing 91xxxx, is not sufficient to call India! I must dial 01191xxxxx. Didn’t took long to figure that Gigaset offers very limited dial plan configuration options. But eventually, found a way to make it all work with the following settings:
