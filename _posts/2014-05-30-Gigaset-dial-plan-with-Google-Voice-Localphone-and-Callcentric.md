@@ -4,7 +4,7 @@ title: "Gigaset dial plan with Google Voice, Localphone and Callcentric"
 description: "Gigaset dial plan with Google Voice, Localphone and Callcentric"
 category: articles
 tags: [callcentric, gigaset, dial plan]
-comments: false
+comments: true
 share: true
 ---
 
