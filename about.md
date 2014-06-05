@@ -1,13 +1,12 @@
 ---
 layout: page
 permalink: /about/
-title: About the Jekyll Theme
-tags: [Jekyll, theme, simple, minimal, minimalism, responsive]
-modified: 2013-09-13
+title: Mohnish Chaudhary
+tags: [mohnish, mohnish82]
+modified: 2014-04-06
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: Michael Rose
-  creditlink: http://mademistakes.com
+  feature: mc-face.jpg
+  credit: Mohnish Chaudhary
 ---
 
-Adapted from **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes).
+A software developer by profession, interested in ways technology can change/impact human life.
