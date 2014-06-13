@@ -1,12 +1,6 @@
 ---
 layout: page
-permalink: /about/
-title: Mohnish Chaudhary
-tags: [mohnish, mohnish82]
-modified: 2014-04-06
-image:
-  feature: mc-face.jpg
-  credit: Mohnish Chaudhary
+title: About me 
 ---
 
-A software developer by profession, interested in ways technology can change/impact human life.
+This is where you could put your "About me" page.
