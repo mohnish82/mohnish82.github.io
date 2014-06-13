@@ -5,7 +5,7 @@ meta_description: "Mohnish's tidbits"
 markdown: redcarpet
 pygments: true
 logo: false
-paginate: 15
+paginate: 25
 
 # Details for the RSS feed generator
 url:            'http://mohnish82.github.io'
