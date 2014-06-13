@@ -2,11 +2,11 @@ title:        Mohnish's tidbits
 tagline:      
 description:  
 url:          http://mohnish82.github.io
-version:      1.1.1
+version:      1.1
 author:
   name:       'Mohnish Chaudhary'
   email:      'mohnish82@gmail.com'
 markdown:     rdiscount
 permalink:    pretty
-pygments:     true
-paginate:     5
+pygments:     false
+paginate:     10
