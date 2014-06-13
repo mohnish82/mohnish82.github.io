@@ -1,12 +1,12 @@
-name: Mohnish's tidbits
-description: 
-meta_description: "Mohnish's tidbits"
-
-markdown: redcarpet
-pygments: true
-logo: false
-paginate: 25
-
-# Details for the RSS feed generator
-url:            'http://mohnish82.github.io'
-author:         'Mohnish Chaudhary'
+title:        Mohnish's tidbits
+tagline:      
+description:  
+url:          http://mohnish82.github.io
+version:      1.1.1
+author:
+  name:       'Mohnish Chaudhary'
+  email:      'mohnish82@gmail.com'
+markdown:     rdiscount
+permalink:    pretty
+pygments:     true
+paginate:     5

@@ -1,24 +1,55 @@
 ---
 layout: post
-title: "Gigaset dial plan with Google Voice, Localphone and Callcentric"
-description: "Gigaset dial plan with Google Voice, Localphone and Callcentric"
-category: articles
-tags: [callcentric, gigaset, dial plan]
-comments: true
-share: true
+title: Example content
 ---
 
-<img style="float:right" src="/images/gigaset-c610ip.jpg" />
-I use Gigaset C610-IP VOIP phone for my calling needs. I’ve hooked it up to Google Voice (using [Simonics](https://simonics.com/gvgw/) gateway) for free US calling. For my international (India) calling needs, I was using [Localphone](http://www.localphone.com/) exclusively until recently. But as Localphone’s call quality decreased to sub par levels, I started looking around for alternatives. I could use Google Voice that cost just 2c/min but with Google declaring that they’ll shut down integration with 3rd parties, I looked around and settled on [Callcentric](http://www.callcentric.com/). Callcentric costs 2.4c/min to India and the voice quality is excellent.
+This blog post shows a few different types of content that's supported and styled with Hyde. Basic typography, images, and code are all supported.
 
-As both Google Voice and Localphone, support E.164 number format i.e. international code +  area code + number, I never had the need to worry about dial plans and other stuff. I stored India numbers as 91xxxxxxxx and US numbers as either 1xxxxx or 10 digits directly without the 1. In dialing plans, I choose the setting – If number starts with 91 use Localphone, otherwise use Google Voice. This worked pretty well as Google Voice accepts 1xxxxx and 10 digit numbers for USA.
+-----
 
-But with Callcentric added to the mix, I faced issues because it does not support ENUM format. Dialing 91xxxx, is not sufficient to call India! I must dial 01191xxxxx. Didn’t took long to figure that Gigaset offers very limited dial plan configuration options. But eventually, found a way to make it all work with the following settings:
+Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
-* `Management > Local Settings`: Choose country as USA and both international and local `Code Number` as 1. Select `Yes` for the option `Predial long distance access code for VoIP calls`.
-* `Telephony > Dialling Plans`: Declare 2 dial plans i.e. 91 — Callcentric  &  1 — Google Voice. Do not select `Use Area Code` option for both. Then under `Code for VOIP line`, enter 011 and choose `Always`.
-* Choose `Google Voice` to be the default call out line.
+> Curabitur blandit tempus porttitor. **Nullam quis risus eget urna mollis** ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
-What this accomplishes is that any dialed number starting with 91 or 1, gets 011 appended to it. 91xx to 01191xx helps to satisfy the Callcentric requirement, so India calling works fine. 1xx to 0111xx works fine as Google Voice accepts 011 + country code + number format. So, 0111<US 10 digit number>, works with Google Voice. You may be wondering that if area code is not to be selected then why did we use that option in 1. That option allows us to dial 10 digit US numbers i.e. without the 1 prefix and still make calls through Google Voice. The way it works is that seeing 10 digit number (not starting with 1), the area code triggers-in. So, it makes US 10 digit number 11 digit number by prefixing 1. Then the dial plan appends 011 to it, making it 0111<US 10 digit number>, which works with Google Voice!
+Etiam porta *sem malesuada magna* mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
-Earlier I thought that due to the limitations of dial plan configuration, I’ll have to go the SipSorcery route. But this configuration works well for dialing international and US numbers (whether 1 prefixed or not). Happy with the current setup for now.
+## Heading
+
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+### Sub-heading
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+{% highlight js %}
+// Example can be run directly in your JavaScript console
+
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
+
+// Call the function
+adder(2, 6);
+// > 8
+{% endhighlight %}
+
+Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+
+### Sub-heading
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+
+* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+* Donec id elit non mi porta gravida at eget metus.
+* Nulla vitae elit libero, a pharetra augue.
+
+Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+
+1. Vestibulum id ligula porta felis euismod semper.
+2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+3. Maecenas sed diam eget risus varius blandit sit amet non magna.
+
+Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+
+-----
+
+Want to see something else added? <a href="https://github.com/mdo/hyde/issues/new">Open an issue.</a>
