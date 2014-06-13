@@ -11,4 +11,4 @@ Then I login to my router and the following command gives me shell access to the
 
 >    ssh -p 8000 root@localhost
 
-* If you use dropbear keys for password-less authentication between the two routers, the commands need to specify the dropbear identity key also.
+Please note that if you use dropbear keys for password-less authentication between the two routers, the commands need to specify the dropbear identity key also.
