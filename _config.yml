@@ -8,5 +8,5 @@ author:
   email:      'mohnish82@gmail.com'
 markdown:     rdiscount
 permalink:    pretty
-pygments:     false
+pygments:     true
 paginate:     10
