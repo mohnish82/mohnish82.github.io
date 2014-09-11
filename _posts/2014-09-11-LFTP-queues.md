@@ -11,9 +11,9 @@ Quick reference:
 
 Download a directory
 > mirror -c --use-pget-n=3 dir_name 
-
-c => resume
-use-pget-n => segmented download with 3 chunks
+>
+>> c => resume
+>> use-pget-n => segmented download with 3 chunks
 
 Upload a directory
 > mirror -R -c --use-pget-n=3 <dir_name>
@@ -38,10 +38,10 @@ Stop further queued actions (but keep current ones going)
 > queue stop
 
 Start all stopped queues
- - exit out of lftp. Upon exit it automatically starts all stopped queues
+> Exit out of lftp. Upon exit it automatically starts all stopped queues
 
 It can use the SSH Agent to connect using already added keys. On my raspberrypi, I do the following for SFTP connection using SSH Agent:
-*Start SSH agent
+* Start SSH agent
 * Add desired key to SSH agent (PS: On raspberry pi, need to execute 'eval '$(ssh-agent)')
 * lftp sftp://<user>@<server>
 
