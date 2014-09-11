@@ -42,8 +42,10 @@ Start all stopped queues
 > Exit out of lftp. Upon exit it automatically starts all stopped queues
 
 It can use the SSH Agent to connect using already added keys. On my raspberrypi, I do the following for SFTP connection using SSH Agent
-* Start SSH agent
-* Add desired key to SSH agent (PS: On raspberry pi, need to execute 'eval '$(ssh-agent)')
-* lftp sftp://<user>@<server>
+> Start SSH agent
+>
+> Add desired key to SSH agent (PS: On raspberry pi, need to execute 'eval '$(ssh-agent)')
+>
+> lftp sftp://<user>@<server>
 
 If asks for password, but hitting ENTER key allows it to connect using the SSH agent. 
