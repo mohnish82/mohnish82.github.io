@@ -11,8 +11,8 @@ Quick reference:
 
 Download a directory
 > mirror -c --use-pget-n=3 dir_name
-> c => resume
-> use-pget-n => segmented download with 3 chunks
+ : c => resume
+ : use-pget-n => segmented download with 3 chunks
 
 Upload a directory
 > mirror -R -c --use-pget-n=3 <dir_name>
