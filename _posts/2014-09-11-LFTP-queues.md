@@ -10,7 +10,7 @@ directory download/upload and resume.
 Quick reference:
 
 Download a directory
-> mirror -c --use-pget-n=3 <dir_name>
+> mirror -c --use-pget-n=3 dir_name
 > c => resume
 > use-pget-n => segmented download with 3 chunks
 
