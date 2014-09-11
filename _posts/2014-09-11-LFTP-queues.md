@@ -3,7 +3,7 @@ layout: post
 title: LFTP - the sophisticated ftp/http client
 ---
 
-The author of the famous LFTP[http://lftp.yar.ru/] tool, defines it as a sophisticated ftp/http client. After using it for a couple of months, I can now attest to that claim.
+The author of the famous [LFTP](http://lftp.yar.ru/ "Official site") tool, defines it as a sophisticated ftp/http client. After using it for a couple of months, I can now attest to that claim.
 It is feature loaded and provide many niceties. Some of the features I use regularly are segmented downloads (splitting a file into parts and transferring those parts concurrently), queues, 
 directory download/upload and resume.
 
