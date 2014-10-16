@@ -3,7 +3,7 @@ layout: post
 title: SSH reverse proxy
 ---
 
-Discovered today that SSH reverse proxy option allows bypassing firewalls. It's helful in connecting to devices sitting behind a router with no port forwarding setup. So, let’s say I need to SSH into friends laptop, who has no port forwarding setup in his router. I can ask him to SSH to my router using command:
+Discovered today that SSH reverse proxy option allows bypassing firewalls. It's helful in connecting to devices sitting behind a router with no port forwarding setup. So, let’s say I need to SSH to my friend's laptop, who has no port forwarding setup in his router. I can ask him to SSH to my router using command:
 
 >    ssh -N 8000:localhost:22 root@MY-ROUTER-IP
 
