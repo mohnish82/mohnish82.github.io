@@ -11,6 +11,6 @@ Then I login to my router and the following command gives me shell access to the
 
 >    ssh -p 8000 root@localhost
 
-Although, I setup SSH tunnel to my router in my example above, this is not required. YOu can setup the tunnel to your laptop, but remember to forward SSH traffic to your laptop in your router settings.
+Although, I setup SSH tunnel to my router in my example above, this is not required. You can setup the tunnel to your laptop, but remember to forward SSH traffic to your laptop in your router settings.
 
 Please note that if you use dropbear keys for password-less authentication between the two routers, the commands need to specify the dropbear identity key also.
