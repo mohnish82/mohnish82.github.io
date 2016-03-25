@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LFTP - the sophisticated ftp/http client
+title: LFTP - a sophisticated ftp/http client
 ---
 
 The author of the famous [LFTP](http://lftp.yar.ru/ "Official site") tool, defines it as a sophisticated ftp/http client. After using it for a couple of months, I can now attest to that claim.
