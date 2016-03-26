@@ -6,7 +6,8 @@ version:      1.1
 author:
   name:       'Mohnish Chaudhary'
   email:      'mohnish82@gmail.com'
-kramdown:     rdiscount
+kramdown:     redcarpet
+highlighter:  pygments
 permalink:    pretty
 pygments:     true
 paginate:     5
