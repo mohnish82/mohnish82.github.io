@@ -8,5 +8,5 @@ author:
   email:      'mohnish82@gmail.com'
 markdown:     kramdown
 permalink:    pretty
-pygments:     true
+highlighter:  rouge
 paginate:     5
