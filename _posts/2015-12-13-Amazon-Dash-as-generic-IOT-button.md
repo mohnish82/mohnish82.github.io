@@ -2,7 +2,7 @@
 layout: post
 title: Hacking the Amazon Dash button
 ---
-[amazon dash button](/public/images/amazon_dash.png){:class="img-responsive"}
+![amazon dash button](/public/images/amazon_dash.png){:class="img-responsive"}
 Like most others, I treated Amazon's dash button concept as a flight of fancy. Quickly dismissing it, I never bothered about the buttons. Until now! 
 
 Not long ago, I undertook the project of connecting my car garage to the internet. More than anything, it was to get my feet wet with the emerging IoT wave. After implementing it, I felt the need for a generic physical button to act as a trigger. I saw a few products online, but didn't take the plunge due to the cost. Spending $40-80 for a [button](https://bt.tn/shop/), didn't seem right. Then I found an article, where someone had hacked the $5 Amazon Dash button and made it work as an IoT button. Voila!
