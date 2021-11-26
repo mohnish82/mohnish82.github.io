@@ -13,4 +13,4 @@ I felt constant probe monitoring to be inefficient, so took a different approach
 
 One thing to notice is that the script trigger happens whenever DNSMASQ starts up, or the lease renews/expires. But as we are only interested in triggers when the button is actually pressed, we can employ the `DNSMASQ_SUPPLIED_HOSTNAME` environment variable to make this distinction. It is only supplied for actions when a host joins or resumes an existing lease, since this data is not held by dnsmasq's lease database. So with this setup, I was able to use a push notification mechanism instead of the probe monitoring pull mechanism.
 
-I'm pleased with the functionality they providing for just $5. Give these little marvels a shot.
+I'm happy with the functionality they provide for just $5. Give these little marvels a shot.
