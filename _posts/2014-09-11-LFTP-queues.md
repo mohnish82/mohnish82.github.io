@@ -22,7 +22,7 @@ Upload a directory
 Put current command in background
 > Ctrl-Z
 
-Bring backgrounded command back
+Bring background job/command back
 > wait
 
 Create an empty queue
@@ -39,13 +39,13 @@ Stop further queued actions (but keep current ones going)
 > queue stop
 
 Start all stopped queues
-> Exit out of lftp. Upon exit it automatically starts all stopped queues
+> Exit out of Lftp. Upon exit it automatically starts all stopped queues
 
-It can use the SSH Agent to connect using already added keys. On my raspberrypi, I do the following for SFTP connection using SSH Agent
+It can use the SSH Agent to connect using already added keys. On my Raspberry Pi, I do the following for SFTP connection using SSH Agent
 > Start SSH agent
 >
 > Add desired key to SSH agent (PS: On raspberry pi, need to execute 'eval '$(ssh-agent)')
 >
 > lftp sftp://<user>@<server>
 
-If asks for password, but hitting ENTER key allows it to connect using the SSH agent. 
+If it asks for password, hit ENTER. This should allow it to connect using the SSH agent. 
